@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Your E-Learning Platform</title>
+    <meta name="description" content="Master new skills with LearnHub's curated online courses. Learn web development, programming, design, and more at your own pace.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">LearnHub</h1>
+            <nav>
+                <span id="userDisplay" style="display:none; color: white; margin-right: 20px;"></span>
+                <button id="authBtn" class="btn-secondary">Sign In</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home View -->
+        <div id="homeView">
+            <section class="hero">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1>Transform Your Future with LearnHub</h1>
+                        <p>Master in-demand skills with expert-led courses. Learn at your own pace, track your progress, and achieve your goals.</p>
+                        <button class="btn-primary" onclick="document.getElementById('courses').scrollIntoView({behavior: 'smooth'})">
+                            Explore Courses
+                        </button>
+                    </div>
+                    <div class="auth-card">
+                        <h2 id="authTitle">Sign In</h2>
+                        <form id="authForm">
+                            <input type="text" id="authName" placeholder="Full Name" style="display:none">
+                            <input type="email" id="authEmail" placeholder="Email" required>
+                            <input type="password" id="authPassword" placeholder="Password" required>
+                            <button type="submit" class="btn-primary">Sign In</button>
+                        </form>
+                        <p class="auth-switch">
+                            <span id="switchText">Don't have an account?</span>
+                            <a href="#" id="switchMode">Sign Up</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="courses" class="courses-section">
+                <div class="container">
+                    <h2>Featured Courses</h2>
+                    <div id="courseGrid" class="course-grid"></div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; 2025 LearnHub. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Course Detail View -->
+        <div id="courseDetailView" style="display:none;">
+            <div class="container course-detail">
+                <button class="btn-back" onclick="showHome()">&larr; Back to Courses</button>
+                <div class="course-header">
+                    <h1 id="courseTitle"></h1>
+                    <div class="course-meta">
+                        <span id="courseInstructor"></span>
+                        <span id="courseDuration"></span>
+                        <span id="courseLevel"></span>
+                    </div>
+                    <p id="courseDescription"></p>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-header">
+                        <h3>Your Progress</h3>
+                        <span id="progressPercent">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="lessons-section">
+                    <h3>Course Lessons</h3>
+                    <div id="lessonsList"></div>
+                </div>
+
+                <button id="completeCourseBtn" class="btn-primary btn-complete">
+                    Mark Course as Completed
+                </button>
+                
+                <!-- Back to Featured Courses Button -->
+                <div class="back-to-featured-container">
+                    <button class="btn-secondary" onclick="scrollToFeaturedCourses()">
+                        &larr; Back to Courses
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
