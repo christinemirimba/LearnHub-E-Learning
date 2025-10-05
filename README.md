@@ -1,6 +1,11 @@
 # LearnHub - E-Learning Platform
 A modern, responsive e-learning platform built with HTML, CSS, and JavaScript that provides an immersive learning experience with course tracking and progress management.
 
+## 🌐 Live Demo
+
+**➡️ [Visit Live Site](https://learn-hub-e-learning.vercel.app/) ⬅️**
+
+
 ## 🚀 Features
 
 ### 📚 Course Management
@@ -83,7 +88,7 @@ Browse featured courses
 
 Start your learning journey
 
-💡 How to Use
+## 💡 How to Use
 For Students
 Sign Up/Login - Create your account to track progress
 
@@ -104,7 +109,7 @@ Course Metadata - Instructor, duration, and difficulty level
 
 Responsive Design - Learn on any device
 
-🎨 Customization
+## 🎨 Customization
 Adding New Courses
 Edit the courses array in script.js:
 
@@ -151,7 +156,7 @@ Safari 12+
 
 Edge 79+
 
-🤝 Contributing
+## 🤝 Contributing
 We welcome contributions to improve LearnHub! Here's how you can help:
 
 Fork the repository
@@ -175,10 +180,10 @@ Improve accessibility
 
 Enhance mobile experience
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🐛 Bug Reports
+## 🐛 Bug Reports
 If you encounter any bugs or issues, please open an issue with:
 
 Description of the problem
@@ -189,7 +194,7 @@ Browser and OS information
 
 Screenshots (if applicable)
 
-🌟 Future Enhancements
+## 🌟 Future Enhancements
 Video lesson integration
 
 Quiz and assessment system
@@ -204,19 +209,19 @@ Payment integration for premium courses
 
 Back to Featured Courses button implementation
 
-👨‍💻 Author
+## 👨‍💻 Author
 Christine Mirimba
 
 GitHub: @christinemirimba
 
 Project: LearnHub E-Learning
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 Course thumbnails provided by Unsplash
 
 Icons and UI inspiration from modern design systems
 
-PLP Academy for the learning opportunity
+## PLP Academy for the learning opportunity
 
 <div align="center">
 🎯 Start your learning journey today with LearnHub!
